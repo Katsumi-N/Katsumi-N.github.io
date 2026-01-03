@@ -1,0 +1,221 @@
+/* リセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 基本設定 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ヘッダー */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    opacity: 0.95;
+}
+
+/* メインコンテンツ */
+main {
+    background-color: white;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+section:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #667eea;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #667eea;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+h5 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #667eea;
+    font-weight: 600;
+}
+
+/* ヒーローセクション */
+.hero h2 {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* 概要セクション */
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 機能セクション */
+.features {
+    background-color: white;
+}
+
+.feature-item {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.15);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.feature-item h4 {
+    text-align: center;
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    line-height: 1.8;
+    color: #555;
+}
+
+/* サポートセクション */
+.support-section {
+    margin-bottom: 50px;
+}
+
+.support-section:last-child {
+    margin-bottom: 0;
+}
+
+.faq-item {
+    background-color: white;
+    border-left: 4px solid #667eea;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h5 {
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #555;
+    line-height: 1.8;
+}
+
+.support-section ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.support-section ul li {
+    padding: 10px 0;
+    color: #555;
+}
+
+/* プライバシーポリシーと利用規約 */
+.privacy, .terms {
+    text-align: center;
+}
+
+.privacy p, .terms p {
+    color: #777;
+    font-style: italic;
+}
+
+/* フッター */
+footer {
+    background-color: #2d3748;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    opacity: 0.8;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .feature-item {
+        padding: 20px;
+    }
+}
