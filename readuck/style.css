@@ -1,0 +1,36 @@
+:root {
+  --ink: #20362c;
+  --muted: #607168;
+  --green: #38664f;
+  --green-dark: #274b39;
+  --cream: #fffdf5;
+  --yellow: #f2c94c;
+  --line: #dce6df;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--cream); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.8; }
+body { margin: 0; }
+a { color: var(--green-dark); text-underline-offset: .18em; }
+.container { width: min(760px, calc(100% - 40px)); margin-inline: auto; }
+.hero { padding: 88px 0 72px; background: linear-gradient(145deg, #edf7ef, #fff8d9); border-bottom: 1px solid var(--line); }
+.eyebrow { margin: 0 0 18px; color: var(--green); font-weight: 700; letter-spacing: .08em; }
+.hero h1 { margin: 0; max-width: 650px; font-size: clamp(2.6rem, 8vw, 5rem); line-height: 1.12; letter-spacing: -.04em; }
+.lead { margin: 28px 0 0; max-width: 570px; color: var(--muted); font-size: 1.1rem; }
+main > section { padding: 54px 0; }
+main > section + section { border-top: 1px solid var(--line); }
+h2 { margin: 0 0 14px; color: var(--green-dark); line-height: 1.4; }
+.links { display: grid; gap: 14px; }
+.card { display: flex; justify-content: space-between; gap: 20px; padding: 22px 24px; border: 1px solid var(--line); border-radius: 16px; background: white; color: var(--ink); font-weight: 700; text-decoration: none; box-shadow: 0 8px 24px rgb(32 54 44 / 6%); }
+.card:hover { border-color: var(--green); transform: translateY(-1px); }
+.page-header { padding: 38px 0 30px; background: #edf7ef; border-bottom: 1px solid var(--line); }
+.page-header a { font-weight: 800; text-decoration: none; }
+.page-header h1 { margin: 12px 0 0; font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.25; }
+.policy { padding: 42px 0 70px; }
+.policy .updated { color: var(--muted); font-size: .9rem; }
+.policy h2 { margin-top: 42px; padding-bottom: 8px; border-bottom: 2px solid var(--yellow); font-size: 1.35rem; }
+.policy p, .policy li { color: #35483f; }
+.policy li + li { margin-top: 7px; }
+.policy .back { margin-top: 54px; }
+footer { padding: 28px 0; background: var(--green-dark); color: #f8fbf9; font-size: .9rem; }
+@media (max-width: 520px) { .hero { padding: 64px 0 52px; } .container { width: min(100% - 30px, 760px); } .policy { padding-top: 28px; } }
