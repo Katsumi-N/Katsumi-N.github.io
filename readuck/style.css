@@ -15,7 +15,7 @@ a { color: var(--green-dark); text-underline-offset: .18em; }
 .container { width: min(760px, calc(100% - 40px)); margin-inline: auto; }
 .hero { padding: 88px 0 72px; background: linear-gradient(145deg, #edf7ef, #fff8d9); border-bottom: 1px solid var(--line); }
 .eyebrow { margin: 0 0 18px; color: var(--green); font-weight: 700; letter-spacing: .08em; }
-.hero h1 { margin: 0; max-width: 650px; font-size: clamp(2.6rem, 8vw, 5rem); line-height: 1.12; letter-spacing: -.04em; }
+.hero h1 { margin: 0; font-size: clamp(2rem, 8.5vw, 4.4rem); line-height: 1.12; letter-spacing: -.04em; }
 .lead { margin: 28px 0 0; max-width: 570px; color: var(--muted); font-size: 1.1rem; }
 main > section { padding: 54px 0; }
 main > section + section { border-top: 1px solid var(--line); }
@@ -48,3 +48,5 @@ thead th { color: var(--green-dark); }
 .note { color: var(--muted); font-size: .9rem; }
 .faq h3 { margin: 26px 0 4px; font-size: 1.05rem; }
 .faq p { margin: 0; color: #35483f; }
+.nowrap { display: inline-block; }
+td, thead th + th { white-space: nowrap; }
