@@ -3,19 +3,162 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="readuck（リーダック）のサポート、プライバシーポリシー、利用規約" />
-    <title>readuck サポート</title>
+    <title>readuck（リーダック）- アヒルに話して学びが残る読書メモアプリ</title>
+    <meta name="description" content="readuck（リーダック）は、読んだ本について声や文字でアヒルに話すと、AIが問いを返し、学びカードに整理してくれるiPhone・iPad向けの読書メモアプリです。紙の本でも使え、読み終えていなくても始められます。" />
+    <link rel="canonical" href="https://katsumi-n.github.io/readuck/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="readuck" />
+    <meta property="og:title" content="readuck（リーダック）- 読んだあと、アヒルに少し話そう。" />
+    <meta property="og:description" content="声や文字で話した読書の気づきを、AIが学びカードに整理する読書メモアプリ。" />
+    <meta property="og:url" content="https://katsumi-n.github.io/readuck/" />
+    <meta property="og:image" content="https://katsumi-n.github.io/readuck/images/01-voice.jpg" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="apple-itunes-app" content="app-id=6814338287" />
+    <link rel="alternate" type="text/plain" href="llms.txt" title="LLM向けの説明" />
     <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MobileApplication",
+          "@id": "https://katsumi-n.github.io/readuck/#app",
+          "name": "readuck",
+          "alternateName": ["リーダック", "readuck | 読書記録"],
+          "description": "読んだ本について声や文字でアヒルに話すと、AIが問いを一つ返し、要点・気づき・試してみたいことを学びカードに整理する読書メモアプリ。",
+          "url": "https://katsumi-n.github.io/readuck/",
+          "image": "https://katsumi-n.github.io/readuck/images/01-voice.jpg",
+          "screenshot": [
+            "https://katsumi-n.github.io/readuck/images/01-voice.jpg",
+            "https://katsumi-n.github.io/readuck/images/02-dialogue.jpg",
+            "https://katsumi-n.github.io/readuck/images/03-books.jpg"
+          ],
+          "operatingSystem": "iOS 26.2以降",
+          "applicationCategory": "LifestyleApplication",
+          "applicationSubCategory": "読書記録・読書メモ",
+          "inLanguage": "ja",
+          "installUrl": "https://apps.apple.com/jp/app/id6814338287",
+          "sameAs": ["https://apps.apple.com/jp/app/id6814338287"],
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY", "description": "基本無料。アプリ内課金（readuck Pro）あり" },
+          "featureList": [
+            "声や文字で、本・章ごとに読書メモを残せる",
+            "メモをもとにアヒル（AI）が問いを一つ返す",
+            "メモをAIが要点・気づき・試してみたいことの学びカードに整理",
+            "自分の言葉で説明し直して理解をたしかめる",
+            "書影の並ぶ本棚。紙の本・電子書籍どちらでも使える",
+            "スクリーンショットの一部を切り抜いてメモに残せる",
+            "週の振り返り・一冊のふり返り（readuck Pro）",
+            "MarkdownとJSONでまるごと書き出し（readuck Pro）"
+          ],
+          "author": { "@type": "Person", "name": "Katsumi Naya" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "readuckとはどんなアプリですか？", "acceptedAnswer": { "@type": "Answer", "text": "読んだ本について、アヒルに話すように声や文字でメモを残す読書メモアプリです。AIが問いを一つ返したり、たまったメモを要点・気づき・試してみたいことの「学びカード」に整理したりします。" } },
+            { "@type": "Question", "name": "無料で使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "基本無料です。声・文字のメモと本棚は回数の制限なく使えます。AIのまとめは月2回、アヒルの問いは月5回まで無料で、readuck Pro（月額・年額）では月間の上限がなくなり、週の振り返りやまるごと書き出しも使えます。" } },
+            { "@type": "Question", "name": "紙の本でも使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "使えます。本の内容を取り込む必要はなく、書名を検索するか手入力で登録して、自分の言葉でメモを残します。電子書籍ならスクリーンショットを切り抜いて残すこともできます。" } },
+            { "@type": "Question", "name": "読み終えていなくても使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "使えます。数ページ・一章読んだところで、章ごとにメモを残せます。" } },
+            { "@type": "Question", "name": "AIが本の内容を勝手に補ったり、採点したりしますか？", "acceptedAnswer": { "@type": "Answer", "text": "しません。readuckのAIは本の本文を見ていないため、理解の正誤は判定しません。学びカードの気づきや試してみたいことは本人のメモからだけ作り、AIの意見を本人の気づきとして保存しません。" } },
+            { "@type": "Question", "name": "音声はサーバーに送られますか？", "acceptedAnswer": { "@type": "Answer", "text": "音声はiPhone・iPadの音声認識で文字にし、サーバーには文字だけを送ります。メモや学びカードは端末に保存されます。画像はAIに送りません。" } },
+            { "@type": "Question", "name": "対応している端末と言語は？", "acceptedAnswer": { "@type": "Answer", "text": "iOS 26.2以降のiPhoneとiPadに対応しています。現在は日本語のみです。" } }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <header class="hero">
       <div class="container">
         <p class="eyebrow">readuck · リーダック</p>
-        <h1>読んだあと、<br />アヒルに少し話そう。</h1>
-        <p class="lead">本について話した言葉を、AIが学びのカードに整理する読書アプリです。</p>
+        <h1><span class="nowrap">読んだあと、</span><br /><span class="nowrap">アヒルに少し話そう。</span></h1>
+        <p class="lead">readuck（リーダック）は、本について話した言葉を、AIが学びのカードに整理する iPhone・iPad 向けの読書メモアプリです。</p>
+        <p class="cta"><a class="button" href="https://apps.apple.com/jp/app/id6814338287">App Store で入手（無料）</a></p>
       </div>
     </header>
     <main class="container">
+      <section>
+        <h2>readuck とは</h2>
+        <p>readuck は、本を読んで感じたことや考えたことを、声と文字で残せる読書メモアプリです。アヒルに教えてあげるつもりで、ひとことから話します。もう少し考えたいときはアヒルが問いを一つ返し、たまったメモは AI が「要点・気づき・試してみたいこと」の学びカードにまとめます。</p>
+        <p>「なるほどと思ったのに、あとで思い出せない」「読書メモを残したいけれど、きれいに書くのは大変」という人のために作りました。発想の元は、アヒルの人形に説明しながら自分で答えに気づく「ラバーダック・デバッグ」です。</p>
+      </section>
+
+      <section>
+        <h2>できること</h2>
+        <dl class="features">
+          <dt>声でも、文字でも。本・章ごとにメモ</dt>
+          <dd>印象に残ったこと、試してみたいこと、まだよくわからないこと。話すと端末の音声認識で文字になり、章ごとのスレッドに並びます。書いている間は AI を待ちません。</dd>
+          <dt>アヒルの問いで、もう一歩考える</dt>
+          <dd>「質問して」を押すと、あなたのメモを引用した問いをアヒルが一つ返します。答えや解説は返さず、考えるのはあなたです。</dd>
+          <dt>気づきを「学びカード」に</dt>
+          <dd>たまったメモを AI が要点・気づき・試してみたいことに整理します。内容は自分の言葉に直して保存できます。</dd>
+          <dt>あとから、アヒルとたしかめる</dt>
+          <dd>残した学びについての問いに答え、自分の言葉で説明し直します。採点はせず、説明しにくかったところを次に読むときの入口として残します。</dd>
+          <dt>表紙の並ぶ本棚</dt>
+          <dd>国立国会図書館サーチで書名を検索するか、手入力で登録します。紙の本でも電子書籍でも使えます。電子書籍のスクリーンショットは、指で囲んだ部分だけを切り抜いて残せます。</dd>
+          <dt>あなたのアヒルと、あなたのペースで</dt>
+          <dd>アヒルの名前と色を選び、記録を重ねると帽子や部屋の小物が増えます。お休みしても、手に入れたアイテムはなくなりません。</dd>
+        </dl>
+        <div class="shots">
+          <img src="images/01-voice.jpg" width="600" height="1300" loading="lazy" alt="声でメモを残す画面" />
+          <img src="images/02-dialogue.jpg" width="600" height="1300" loading="lazy" alt="アヒルの問いと自分の回答の一覧" />
+          <img src="images/03-books.jpg" width="600" height="1300" loading="lazy" alt="表紙が並ぶ本棚" />
+        </div>
+      </section>
+
+      <section>
+        <h2>こんな人に</h2>
+        <ul>
+          <li>ビジネス書・実用書を読むけれど、読書メモが続かない人</li>
+          <li>読んだ内容を、誰かに説明するように振り返りたい人</li>
+          <li>紙の本を読みながら、手軽に気づきを残したい人</li>
+          <li>Obsidian などのノートに読書の記録を集めたい人（Markdown・JSON で書き出せます）</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>ほかの読書記録アプリとの違い</h2>
+        <p>読んだ冊数や進捗を管理するアプリ、ハイライトを集めるアプリとは違い、readuck は「自分の言葉で説明すること」を中心にしています。AI は本の本文を見ず、内容を知っているふりをして補足したり、理解を採点したりしません。学びカードの気づきや試してみたいことは、あなたが話した言葉からだけ作ります。</p>
+      </section>
+
+      <section>
+        <h2>料金</h2>
+        <p>アプリは無料で使えます。</p>
+        <table>
+          <thead><tr><th></th><th>無料</th><th>readuck Pro</th></tr></thead>
+          <tbody>
+            <tr><th>声・文字のメモ、本棚</th><td>制限なし</td><td>制限なし</td></tr>
+            <tr><th>AI でまとめる（学びカード）</th><td>月2回</td><td>月間上限なし</td></tr>
+            <tr><th>アヒルの問い</th><td>月5回</td><td>月間上限なし</td></tr>
+            <tr><th>一冊のふり返り</th><td>1冊まで</td><td>○</td></tr>
+            <tr><th>アヒルと週の振り返り</th><td>—</td><td>○</td></tr>
+            <tr><th>まるごと書き出し（Markdown・JSON）</th><td>—</td><td>○</td></tr>
+          </tbody>
+        </table>
+        <p class="note">readuck Pro は月額・年額のサブスクリプションです。価格は App Store でご確認ください。Pro にも、サービス保護のための1日の上限があります。</p>
+      </section>
+
+      <section>
+        <h2>プライバシー</h2>
+        <p>音声は端末の音声認識で文字にし、サーバーには送りません。メモ・学びカード・画像は端末に保存されます。AI の機能を使うときだけ、必要な文字をサーバー経由で AI に送ります。詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+      </section>
+
+      <section class="faq">
+        <h2>よくある質問</h2>
+        <h3>無料で使えますか？</h3>
+        <p>基本無料です。声・文字のメモと本棚は回数の制限なく使えます。AI のまとめは月2回、アヒルの問いは月5回まで無料です。</p>
+        <h3>紙の本でも使えますか？</h3>
+        <p>使えます。本の内容を取り込む必要はなく、書名を検索するか手入力で登録して、自分の言葉でメモを残します。</p>
+        <h3>読み終えていなくても使えますか？</h3>
+        <p>使えます。数ページ・一章読んだところで、章ごとにメモを残せます。</p>
+        <h3>AI が本の内容を補ったり、採点したりしますか？</h3>
+        <p>しません。AI は本の本文を見ていないため、理解の正誤は判定しません。AI の意見を、あなたの気づきとして保存することもありません。</p>
+        <h3>対応している端末と言語は？</h3>
+        <p>iOS 26.2 以降の iPhone と iPad です。現在は日本語のみです。</p>
+      </section>
+
       <section>
         <h2>サポート</h2>
         <p>不具合、ご要望、データに関するご相談は、アプリの「アヒルのお部屋」にある封筒からお問い合わせください。返信が必要な場合は、フォームにメールアドレスをご入力ください。</p>

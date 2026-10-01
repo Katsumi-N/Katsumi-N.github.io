@@ -1,0 +1,8 @@
+# Katsumi Naya のアプリ
+
+> 個人開発の iOS アプリのサポートサイトです。
+
+## アプリ
+
+- [readuck（リーダック）](https://katsumi-n.github.io/readuck/): 読んだ本についてアヒルに話すと、AIが問いを返し学びカードに整理する読書メモアプリ。詳細は https://katsumi-n.github.io/readuck/llms.txt
+- [Katasuke](https://katsumi-n.github.io/katasuke/): AI片付け支援アプリ
