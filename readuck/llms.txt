@@ -1,6 +1,6 @@
 # readuck
 
-> readuck（リーダック）は、読んだ本について声や文字でアヒルに話すと、AIが問いを一つ返し、たまったメモを「要点・気づき・試してみたいこと」の学びカードに整理する、iPhone・iPad向けの読書メモアプリです。基本無料（アプリ内課金 readuck Pro あり）。iOS 26.2以降、日本語。
+> readuck（リーダック）は、読んだ本について声や文字でアヒルに話すと、AIが問いを一つ返し、たまったメモを「要点・気づき・試してみたいこと」の学びカードに整理する、iPhone・iPad向けの読書メモアプリです。基本無料（アプリ内課金 readuck Pro あり）。iOS 26.2以降。日本語と英語に対応。
 
 - App Store: https://apps.apple.com/jp/app/id6814338287
 - 開発: Katsumi Naya（個人開発）
@@ -13,8 +13,9 @@
 - メモをAIが学びカード（要点・気づき・試してみたいこと）に整理する。本人が編集して保存する。
 - 「たしかめる」で、残した学びを自分の言葉で説明し直す。採点はしない。
 - AIは本の本文を見ない。本の内容を補ったり理解の正誤を判定したりせず、AIの意見を本人の気づきとして保存しない。
-- 紙の本でも電子書籍でも使える。書名検索（国立国会図書館サーチ）または手入力で登録し、表紙の並ぶ本棚に残る。電子書籍のスクリーンショットは一部を切り抜いて残せる。
+- 紙の本でも電子書籍でも使える。書名検索（和書は国立国会図書館サーチ、洋書はOpen Library）または手入力で登録し、表紙の並ぶ本棚に残る。電子書籍のスクリーンショットは一部を切り抜いて残せる。
 - 読み終えていなくても、数ページ・一章ごとに使える。
+- 画面は日本語と英語に対応し、端末の言語に合わせて切り替わる。AIのまとめ・問い・振り返りも画面の言語で返る。声を文字にする言葉は、画面の言語とは別に日本語か英語を選べる。
 - アヒルの名前と色を選び、記録を重ねると帽子や部屋の小物が増える。休んでもアイテムは消えない。
 - 発想の元はラバーダック・デバッグ（アヒルに説明しながら自分で気づく手法）。
 
@@ -29,6 +30,10 @@
 - 読んだ内容を、人に説明するように振り返りたい人
 - 紙の本を読みながら手軽に気づきを残したい人
 - Obsidianなどのノートアプリに読書記録を集めたい人
+
+## In English
+
+readuck is a reading notes app for iPhone and iPad. After you read, talk to your duck by voice or text. When you want to think further, tap "Ask me" and the duck asks you one question that quotes your own notes. AI turns your notes into takeaway cards (key points, insights, things to try) that you edit in your own words. The AI never sees the book's text, so it doesn't grade your understanding or fill in content you didn't say. Works with paper books and ebooks; English books are searched via Open Library. Free to use, with an optional subscription (readuck Pro). Available in English and Japanese; the app and its AI follow your device language, and you can choose English or Japanese for voice input separately. Requires iOS 26.2 or later.
 
 ## ページ
 
